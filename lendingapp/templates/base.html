@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Polanie</title>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/jquery.mobile-1.4.2.min.css" />
+    <script src="/static/jquery-2.1.1.min.js"></script>
+    <script src="/static/jquery.mobile-1.4.2.min.js"></script>
+    <script src="/static/DataTables-1.10.9/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="/static/DataTables-1.10.9/css/jquery.dataTables.css"/>
+    <script src="/static/tables.js"></script>
+{% block extrahead %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/admin"><span class="glyphicon glyphicon-home"></span>Admin</a>
+      </li>      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    </ul>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

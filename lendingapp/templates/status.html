@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container">
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Region</th>
+                <th>Status</th>                
+            </tr>
+        </thead>        
+        <tbody>
+            {% for item in costumes %}
+            <tr>
+                <td>{{item.serial_number}}</td>
+                <td>{{item.region}}</td>
+                <td>{{item.status}}</td>                
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
