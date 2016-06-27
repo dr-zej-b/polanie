@@ -1,4 +1,4 @@
-# costume-inventory
+# [Polanie.dance](http://polanie.dance)
 
 This is a minimalistic app designed to keep track of costume inventory in an amature folk dance group.  The app uses django-heroku template. 
 
@@ -7,15 +7,12 @@ This application supports the [Getting Started with Python on Heroku](https://de
 ## Installing
 
 ```sh
-$ git clone git@github.com:heroku/python-getting-started.git
+$ git clone https://github.com/dr-zej-b/polanie.git
 $ cd costume-inventory
 $ sudo pip install virtualenv
 $ virtualenv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
-
-$ createdb costume-inventory
-
 $ python manage.py migrate
 $ python manage.py collectstatic
 $ ./run.sh
